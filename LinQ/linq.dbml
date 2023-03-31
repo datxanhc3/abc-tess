@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Linq" Class="linqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ADMIN-PC\SQLEXPRESS01;Initial Catalog=Linq;Integrated Security=True" SettingsObjectName="LinQ.Properties.Settings" SettingsPropertyName="LinqConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TBL_NCC" Member="TBL_NCCs">
+    <Type Name="TBL_NCC">
+      <Column Name="mancc" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenncc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="TBL_NCC_TBL_SANPAHM" Member="TBL_SANPAHMs" ThisKey="mancc" OtherKey="mancc" Type="TBL_SANPAHM" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_SANPAHM" Member="TBL_SANPAHMs">
+    <Type Name="TBL_SANPAHM">
+      <Column Name="mahang" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenhang" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="mancc" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="soluong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="donhangnhap" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="TBL_NCC_TBL_SANPAHM" Member="TBL_NCC" ThisKey="mancc" OtherKey="mancc" Type="TBL_NCC" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="linq">
+  <DataContextMoniker Name="/linqDataContext" />
+  <nestedChildShapes>
+    <classShape Id="99b5242c-cbb5-4174-b987-ed2c9cc83d03" absoluteBounds="1.125, 2.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/linqDataContext/TBL_NCC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1658dcd8-569d-44e8-a7be-dc71a6fed42f" absoluteBounds="1.1400000000000006, 3.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cf651425-61e2-4d56-8b1e-454149643262" absoluteBounds="6.375, 4.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/linqDataContext/TBL_SANPAHM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e9825793-b897-4ef6-81f3-77292587bc36" absoluteBounds="6.3900000000000006, 5.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.125 : 4.06899251302083); (2.125 : 5.76044840494792); (6.375 : 5.76044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/linqDataContext/TBL_NCC/TBL_NCC_TBL_SANPAHM" />
+      <nodes>
+        <classShapeMoniker Id="99b5242c-cbb5-4174-b987-ed2c9cc83d03" />
+        <classShapeMoniker Id="cf651425-61e2-4d56-8b1e-454149643262" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
